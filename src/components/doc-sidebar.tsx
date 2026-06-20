@@ -26,6 +26,7 @@ const nav: { title: string; icon: LucideIcon; items: { title: string; href: stri
     icon: FileCode2,
     items: [
       { title: "Next.js Integration", href: "/docs/tutorial" },
+      { title: "Vite + React Integration", href: "/docs/tutorial-vite" },
     ],
   },
   {
