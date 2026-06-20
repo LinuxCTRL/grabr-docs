@@ -27,6 +27,7 @@ const nav: { title: string; icon: LucideIcon; items: { title: string; href: stri
     items: [
       { title: "Next.js Integration", href: "/docs/tutorial" },
       { title: "Vite + React Integration", href: "/docs/tutorial-vite" },
+      { title: "TanStack Start Integration", href: "/docs/tutorial-tanstack" },
     ],
   },
   {
