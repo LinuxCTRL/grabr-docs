@@ -5,13 +5,8 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import "./globals.css";
 
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
 const Operator = localFont({
   src: "./../../public/OperatorMonoLig-Book.otf",
-  variable: "--font-mono"
 });
 
 
@@ -38,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${Operator.variable} font-sans h-full antialiased`}
+      className={`${Operator.className} font-sans h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
