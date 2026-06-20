@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Download, Book, Terminal, Code2, Cpu, type LucideIcon, ChevronRight } from "lucide-react";
+import { Download, Book, Terminal, Code2, Cpu, FileCode2, type LucideIcon, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const nav: { title: string; icon: LucideIcon; items: { title: string; href: string }[] }[] = [
@@ -19,6 +19,13 @@ const nav: { title: string; icon: LucideIcon; items: { title: string; href: stri
     items: [
       { title: "CLI Reference", href: "/docs/cli" },
       { title: "Library API", href: "/docs/api" },
+    ],
+  },
+  {
+    title: "Guides",
+    icon: FileCode2,
+    items: [
+      { title: "Next.js Integration", href: "/docs/tutorial" },
     ],
   },
   {

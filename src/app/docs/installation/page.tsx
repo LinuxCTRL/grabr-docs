@@ -21,16 +21,16 @@ export default function InstallationPage() {
       </ul>
 
       <h2>Install as a CLI</h2>
-      <CodeBlock lang="bash" code="npm install -g grabr" />
+      <CodeBlock lang="bash" code="npm install -g @linuxctrl/grabr" />
       <p>Or with Bun:</p>
-      <CodeBlock lang="bash" code="bun install -g grabr" />
+      <CodeBlock lang="bash" code="bun install -g @linuxctrl/grabr" />
       <p>After installation, verify it works:</p>
-      <CodeBlock lang="bash" code="grabr --help" />
+      <CodeBlock lang="bash" code="npx @linuxctrl/grabr --help" />
 
       <h2>Install as a Library</h2>
-      <CodeBlock lang="bash" code="npm install grabr" />
+      <CodeBlock lang="bash" code="npm install @linuxctrl/grabr" />
       <p>Then import it in your project:</p>
-      <CodeBlock lang="typescript" code={`import { Downloader } from "grabr";
+      <CodeBlock lang="typescript" code={`import { Downloader } from "@linuxctrl/grabr";
 
 const downloader = new Downloader();
 await downloader.start();`} />

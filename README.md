@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# grabr documentation
 
-## Getting Started
+This is the official documentation website for **[grabr](https://www.npmjs.com/package/@linuxctrl/grabr)**, a modern, elegant file downloader with parallel chunking, resumable transfers, and an interactive terminal dashboard built for Node.js and Bun.
 
-First, run the development server:
+🔗 **NPM Package**: [@linuxctrl/grabr](https://www.npmjs.com/package/@linuxctrl/grabr)  
+🔗 **GitHub Repository**: [LinuxCTRL/grabr](https://github.com/LinuxCTRL/grabr)  
+
+## Overview
+`grabr` splits massive files into chunks and downloads them simultaneously for maximum speed, providing a real-time terminal UI with speeds, ETAs, and progress bars. You can use it as a standalone CLI tool or import it programmatically into your own Node.js/Bun applications.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install grabr globally
+npm install -g @linuxctrl/grabr
+
+# Download a file at warp speed
+grabr add https://speed.hetzner.de/10GB.bin
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running the Documentation Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This documentation website is built using [Next.js](https://nextjs.org/) App Router, [Tailwind CSS](https://tailwindcss.com/), `shiki` for premium syntax highlighting, and `framer-motion` for smooth animations.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+First, install dependencies:
 
-## Learn More
+```bash
+bun install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Then, run the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+bun run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) with your browser to view the site.

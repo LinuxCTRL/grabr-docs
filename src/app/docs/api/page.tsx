@@ -18,11 +18,11 @@ export default function ApiPage() {
       </p>
 
       <h2>Installation</h2>
-      <CodeBlock lang="bash" code="npm install grabr" />
+      <CodeBlock lang="bash" code="npm install @linuxctrl/grabr" />
 
       <h2>Import</h2>
-      <CodeBlock lang="typescript" code={`import { Downloader, SpeedMeter, loadConfig, saveConfig } from "grabr";
-import type { DownloadJob, DownloadOptions, JobStatus, ChunkInfo, GrabrConfig } from "grabr";`} />
+      <CodeBlock lang="typescript" code={`import { Downloader, SpeedMeter, loadConfig, saveConfig } from "@linuxctrl/grabr";
+import type { DownloadJob, DownloadOptions, JobStatus, ChunkInfo, GrabrConfig } from "@linuxctrl/grabr";`} />
 
       <h2>Downloader</h2>
       <p>
@@ -146,7 +146,7 @@ downloader.on("job:removed", (jobId: string) => {
 }`} />
 
       <h2>Config</h2>
-      <CodeBlock lang="typescript" code={`import { loadConfig, saveConfig } from "grabr";
+      <CodeBlock lang="typescript" code={`import { loadConfig, saveConfig } from "@linuxctrl/grabr";
 
 const config = loadConfig();
 console.log(config.outputDir); // ~/Downloads
