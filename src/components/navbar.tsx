@@ -18,7 +18,7 @@ export function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center gap-2.5 font-bold text-lg group">
-            <div className="bg-gradient-to-tr from-amber-500 to-amber-300 p-1.5 rounded-lg text-white shadow-lg shadow-amber-500/20 group-hover:shadow-amber-500/40 transition-all duration-300 transform group-hover:scale-105">
+            <div className="bg-gradient-to-tr from-cyan-500 to-cyan-300 p-1.5 rounded-lg text-white shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all duration-300 transform group-hover:scale-105">
               <Download className="size-5" />
             </div>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 tracking-tight text-xl">grabr</span>
@@ -47,7 +47,7 @@ export function Navbar() {
           </div>
           <div className="h-4 w-px bg-border/50 hidden sm:block" />
           <ModeToggle />
-          <Button asChild size="sm" className="hidden sm:inline-flex bg-amber-500 text-white hover:bg-amber-600 shadow-lg shadow-amber-500/20 rounded-full px-4">
+          <Button asChild size="sm" className="hidden sm:inline-flex bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:opacity-90 shadow-lg shadow-cyan-500/20 rounded-full px-4 border-0">
             <Link href="/docs/installation">Get Started</Link>
           </Button>
         </div>

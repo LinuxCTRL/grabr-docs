@@ -3,14 +3,14 @@ import { CodeBlock } from "@/components/code-block";
 export default function ViteTutorialPage() {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 text-sm font-medium mb-6 border border-amber-500/20">
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 text-sm font-medium mb-6 border border-cyan-500/20">
         <span className="relative flex h-2 w-2">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
         </span>
         Full Integration Guide
       </div>
-      <article className="prose prose-neutral dark:prose-invert max-w-none prose-headings:tracking-tight prose-h1:text-4xl prose-h1:font-extrabold prose-h2:border-b prose-h2:pb-2 prose-h2:mt-10 prose-pre:bg-muted/50 prose-pre:border prose-pre:border-border/50 prose-pre:shadow-sm prose-pre:rounded-xl prose-a:text-amber-500 hover:prose-a:text-amber-600 transition-colors prose-strong:text-amber-600 dark:prose-strong:text-amber-400">
+      <article className="prose prose-neutral dark:prose-invert max-w-none prose-headings:tracking-tight prose-h1:text-4xl prose-h1:font-extrabold prose-h2:border-b prose-h2:pb-2 prose-h2:mt-10 prose-pre:bg-muted/50 prose-pre:border prose-pre:border-border/50 prose-pre:shadow-sm prose-pre:rounded-xl prose-a:text-cyan-500 hover:prose-a:text-cyan-600 transition-colors prose-strong:text-cyan-600 dark:prose-strong:text-cyan-400">
         <h1 className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">Using grabr with Vite + React</h1>
 
         <p>
@@ -169,8 +169,8 @@ npm run dev`} />
           Open the Vite frontend URL in your browser, click <strong>Download via Backend</strong>, and watch your Express terminal! grabr will instantly parallel-chunk the file directly to your backend's <code>./downloads</code> folder at maximum speed.
         </p>
 
-        <div className="bg-amber-500/10 border border-amber-500/20 p-4 rounded-lg mt-8">
-          <h3 className="text-amber-500 font-bold m-0 mb-2">Advanced: Live Progress via WebSocket</h3>
+        <div className="bg-cyan-500/10 border border-cyan-500/20 p-4 rounded-lg mt-8">
+          <h3 className="text-cyan-500 font-bold m-0 mb-2">Advanced: Live Progress via WebSocket</h3>
           <p className="text-sm m-0 text-muted-foreground">
             Want to show real-time progress bars in React? Use a WebSocket library like <code>socket.io</code> to listen to grabr's <code>job:progress</code> events in Express, and emit them to your Vite frontend!
           </p>

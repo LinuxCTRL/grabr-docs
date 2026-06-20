@@ -63,13 +63,13 @@ export function DocSidebar() {
                       className={cn(
                         "group flex items-center justify-between rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200",
                         isActive
-                          ? "bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 shadow-sm"
+                          ? "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 shadow-sm"
                           : "text-muted-foreground hover:text-foreground hover:bg-muted/80 border border-transparent"
                       )}
                     >
                       <span>{item.title}</span>
                       {isActive && (
-                        <ChevronRight className="size-3.5 text-amber-500 animate-in slide-in-from-left-2" />
+                        <ChevronRight className="size-3.5 text-cyan-500 animate-in slide-in-from-left-2" />
                       )}
                     </Link>
                   </li>
